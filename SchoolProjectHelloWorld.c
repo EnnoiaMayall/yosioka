@@ -1,0 +1,1 @@
+a;main(){int b=++a+a,c=b+b,d=c+c,e=d+d,f=e+e,g=f+f,h=g+f+c,i=d+b+a;char s[]={g+d,h+a,h+d,h+d,h+i,f,h-i-b,h+i,h+e-b,h+d,h,b+d};puts(s);}
