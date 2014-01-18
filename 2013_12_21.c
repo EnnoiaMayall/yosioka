@@ -1,21 +1,27 @@
 #include <stdio.h>
 
+
+a;
+
 int main()
 {
-	//2147483647 * 2
-	//char s[4294967295];
+	char s[2];
 	
-	char s[0];
-	s[0] = 'c';
-	s[1] = 'a';
-	s[2] = '\n';
+	int i = 0;
 	
-	printf(s);
+	printf("%d",a);
 	
 	while(fgets(s,sizeof(s),stdin) != NULL)
 	{
-		fputs(s,stdout);
+		//fputs(s,stdout);
+		printf("[%s]",s);
+		
+		i++;
+		if(i == sizeof(stdout) )
+		{
+			i = 0;
+			printf("\n");
+		}
 	}
 	return 0;
-	
 }
